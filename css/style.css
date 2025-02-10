@@ -1302,6 +1302,7 @@ color:#fff;
 	}
 	.navbar ul {
 		border-color: none;
+		margin-left: 15px;
 	}
 	.navbar-nav { 
 	  margin: 0; 
@@ -1322,8 +1323,8 @@ color:#fff;
 		padding-left: 0px;
 	}
 	.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
-		margin-left:  7%;
-		margin-right: 8px;
+		margin-left:  3px;
+		margin-right: 3px;
 	}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		border: none;
