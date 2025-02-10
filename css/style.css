@@ -1287,13 +1287,21 @@ color:#fff;
   }
   
   /* Mobile */
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
 	/* General Adjustments */
 	h1 { font-size: 28px; }
 	h2 { font-size: 22px; }
 	p { font-size: 14px; }
   
 	/* Navigation */
+	#home-carousel .item { 
+		height: 500px; 
+		background-position: center;
+	  }
+	.carousel-caption { 
+		top: 40%; 
+		margin-top: -120px; 
+	  }
 	#menu .navbar-brand {
 		font-size: 20px;
 		color: red;
