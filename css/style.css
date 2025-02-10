@@ -1304,7 +1304,6 @@ color:#fff;
 	  }
 	#menu .navbar-brand {
 		font-size: 20px;
-		color: red;
 	}
 	#menu ul.nav li a {
 		font-size: 16px;
@@ -1404,12 +1403,6 @@ color:#fff;
         background-size: 200px 320px; /* Smaller background size */
     }
 
-    /* Adjust the website design and learning images for smaller screens */
-    .col-md-5.col-sm-12.col-xs-12.text-center img {
-        height: 180px; /* Reduce image height */
-        width: auto; /* Maintain aspect ratio */
-    }
-
     /* Adjust the navigation arrows for smaller screens */
     .home-carousel-left,
     .home-carousel-right {
@@ -1421,9 +1414,73 @@ color:#fff;
     }
 
     .home-carousel-right {
-        right: 10px; /* Adjust position */
+        right: 10px; 
     }
-}
+	/* slide 2 */
+	#slide2.col-xs-12 {
+        top: 380px !important;
+		left: 2.5px !important;
+    }
+	#slide2 img {
+        height: 200px !important;  
+        width: auto !important;   
+    }
+	#slider2 .carousel-caption {
+        top: 25%;
+        padding-right: 70px;
+    }
+	#slider2 h1{
+		font-size: 15px;
+		color: #71c1ce;
+		font-weight: 500;
+	}
+	#slider2 h2{
+		font-size: 20px;
+		font-weight: 500;
+		color: #b9d8dd;
+	}
+	#slider2 .carousel-caption p {
+		padding-left: 15px;
+		line-height: 0.8cm;
+		font-size: 17px !important; /* Force override */
+		font-weight: 400;
+		letter-spacing: 1px;		
+		color: #deeef0;;
+	}
+	/* slide 3*/
+	#slide3.col-xs-12 {
+        top: 380px !important;
+		left: 2.5px !important;
+    }
+	#slide3 img {
+        height: 200px !important;  
+        width: auto !important;   
+    }
+	#slider3 .carousel-caption {
+        top: 25%;
+        padding-right: 70px;
+    }
+	#slider3 h1{
+		font-size: 15px;
+		color: #99e9f5;
+		font-weight: 500;
+	}
+	#slider3 h2{
+		font-size: 20px;
+		font-weight: 500;
+		color: #99e7f3;
+	}
+	#slider3 .carousel-caption p{
+		padding-left: 15px;
+		line-height: 0.8cm;
+		font-size: 17px !important; /* Force override */
+		font-weight: 400;
+		letter-spacing: 0.5px;		
+		color: #cdf0f5;
+	}
+
+	
+
 	/* About Section */
 	.button-container .btn { 
 	  width: 100%; 
@@ -1459,6 +1516,7 @@ color:#fff;
 	.scrolling-text { 
 	  font-size: 18px; 
 	}
+}
   
 
 
