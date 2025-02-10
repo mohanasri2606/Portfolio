@@ -45,7 +45,6 @@ img {
 /* Add to style.css */
 section {
 	min-height: 100vh; /* Each section takes full viewport height */
-	padding: 60px 0; /* Add spacing */
 	position: relative; /* For child positioning */
   }
 ::selection {
@@ -1330,11 +1329,29 @@ color:#fff;
 		border: none;
 	}
 	/* Slider */
+	#Profile.col-xs-12 {
+        top: 20px !important;
+    }
+	#slide1 h1{
+		font-size: 18px;
+		color: #e0c9db;
+	}	
+	#slide1 h2{
+		font-size: 36px;
+		font-weight: 400;
+		color: #ece2ec;
+	}
+	#slide1 span{
+		color: #f2f5d5;
+		font-size: 28px;
+		font-weight: 500;
+
+	}
 	#home-carousel .item { 
-	  height: 400px; 
+	  height: 800px; 
 	}
 	.carousel-caption { 
-	  top: 35%; 
+	  top: 65%; 
 	  padding: 10px; 
 	}
 	.carousel-caption h1 { 
@@ -1347,7 +1364,55 @@ color:#fff;
 	.rotating-text { 
 	  font-size: 16px; 
 	}
-  
+    /* Adjust the slider height for smaller screens */
+    .carousel-inner .item {
+        height: 60vh; /* Reduce height for smaller screens */
+    }
+
+    /* Adjust the caption text for smaller screens */
+    .carousel-caption h1 {
+        font-size: 28px; /* Smaller font size for h1 */
+        margin-bottom: 10px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 20px; /* Smaller font size for h2 */
+        margin-bottom: 10px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px; /* Smaller font size for paragraphs */
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the profile image container for smaller screens */
+    #Profile {
+        top: 20px; /* Move the profile image higher */
+        right: 10px; /* Adjust position */
+        padding: 10px; /* Reduce padding */
+        background-size: 200px 320px; /* Smaller background size */
+    }
+
+    /* Adjust the website design and learning images for smaller screens */
+    .col-md-5.col-sm-12.col-xs-12.text-center img {
+        height: 180px; /* Reduce image height */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust the navigation arrows for smaller screens */
+    .home-carousel-left,
+    .home-carousel-right {
+        font-size: 20px; /* Smaller arrow size */
+    }
+
+    .home-carousel-left {
+        left: 10px; /* Adjust position */
+    }
+
+    .home-carousel-right {
+        right: 10px; /* Adjust position */
+    }
+}
 	/* About Section */
 	.button-container .btn { 
 	  width: 100%; 
@@ -1383,6 +1448,6 @@ color:#fff;
 	.scrolling-text { 
 	  font-size: 18px; 
 	}
-  }
+  
 
 
