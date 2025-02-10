@@ -1332,6 +1332,7 @@ color:#fff;
 	/* Slider */
 	#Profile.col-xs-12 {
         top: 20px !important;
+		left: 2.5px;
     }
 	#slide1 h1{
 		font-size: 18px;
