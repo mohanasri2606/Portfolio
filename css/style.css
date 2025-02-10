@@ -1295,7 +1295,7 @@ color:#fff;
   
 	/* Navigation */
 	#home-carousel .item { 
-		height: 500px; 
+		height: 1000px; 
 		background-position: center;
 	  }
 	.carousel-caption { 
@@ -1478,6 +1478,7 @@ color:#fff;
 		letter-spacing: 0.5px;		
 		color: #cdf0f5;
 	}
+
 
 
 	/* About Section */
