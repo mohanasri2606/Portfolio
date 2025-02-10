@@ -1,9 +1,3 @@
-/*
-	Cosmix by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 * {
 	margin:0 auto;
 }
@@ -32,8 +26,28 @@
 }
 body {
 	font-family: "Poppins";
+	font-size: 16px;
+    line-height: 1.6;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
 }
 /*for-section-text-start-here*/
+/* Add to style.css */
+section {
+	min-height: 100vh; /* Each section takes full viewport height */
+	padding: 60px 0; /* Add spacing */
+	position: relative; /* For child positioning */
+  }
 ::selection {
  background: #e73131; /* WebKit/Blink Browsers */
  color:#fff;
@@ -183,8 +197,17 @@ span {
 	border:1px solid #3d0066;
 	width:15%;
 }
+.img {
+	max-width: 100%;
+	height: auto;
+  }
+  
 a:hover, a:focus {
 	text-decoration:none;
+}
+.btn:hover { 
+	background-color: #6a0dad; 
+	color: white; 
 }
 a.btn-down {
 	height:50px;
@@ -239,32 +262,76 @@ a.btn-send:hover {
 	-webkit-transition: all 0.5s;
 }
 /*Navigation-stylesheets-include-here*/
+nav {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker navbar */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Keeps logo on left, menu on right */
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	text-align: right;
+	float: right;
+}
+
+.navbar ul li {
+    margin-left: 20px; /* Adds spacing between menu items */
+	float: right;
+}
+
 .navbar-default {
-	background:rgba(248, 248, 248, 0);
-	border:rgba(248, 248, 248, 0);
-	padding:5px 5px;
+    background: #ddc3dd;
+	background-image: url('../images/Slider/navbar.jpeg');
+	background-size: cover;  /* Makes the image cover the entire navbar */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    width: 100%;
+    border: rgba(248, 248, 248, 0);
+    padding: 5px 0;
 }
 a.navbar-brand img {
 	position:relative;
 	top:9px;
 }
+section {
+	z-index: 1; /* Ensure sections stack properly */
+  }
+  header#menu {
+	z-index: 1000; /* Keep navbar on top */
+  }
 #menu {
 	position:absolute;
 }
+#menu .navbar-brand{
+	font-family: 'Poppins';
+	font-size: 24px;
+	color: #31043a;
+	text-align: center;
+	letter-spacing:0.09em;
+}
+#menu .nav li {
+    text-align: center; /* Center nav items */
+	letter-spacing:0.09em;
+  }
 #menu .nav {
-	left: 25%;
 	position: relative;
 }
 #menu h3 {
 	font-family: 'Poppins';
-	font-size: 24px;
+	font-size: 22px;
 	color:#fff;
 	font-weight: 500;
 	letter-spacing: 0.05cm;
 }
 #menu ul.nav li a {
-	font-size:19px;
-	color:#fff;
+	font-size:20px;
+	color:#531255;
 	font-weight: 100;
 	letter-spacing: 0.05cm;
 }
@@ -282,19 +349,23 @@ a.navbar-brand img {
 	background:transparent;
 }
 a.navbar-brand {
-	padding:0px;
-	margin-top:-3px;
+	font-size: 30;
 }
 ul.nav li.active a:before {
 	opacity:1;
 }
 .on {
-	background:rgba(0, 0, 0, 0.8);
+	background-image: url('../images/Slider/navbar.jpeg');
+	background-size: cover;  /* Makes the image cover the entire navbar */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    width: 100%;
 	transition:all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 }
+
 /*Slider-stylesheets-include-here*/
 
 	#home-carousel .item {
@@ -323,7 +394,7 @@ ul.nav li.active a:before {
 	text-align: left;
 	color: #fff;
 	text-shadow: none;
-	margin-top: -130px;
+	margin-top: -180px;
 }
 .carousel-caption h1 {
 	font-family: "poppins";
@@ -358,10 +429,11 @@ ul.nav li.active a:before {
 }
 
 #about {
-	background: url('../images/Aboutus/background.jpg') no-repeat center center; 
+	background: url('../images/Aboutus/background.png') no-repeat center center; 
 	background-size: cover; /* Ensure the image covers the entire section */
 	padding: 60px 0; /* Adjust padding as needed */
   }
+
 .button-container {
     margin-top: 10px;
     text-align: center;
@@ -380,7 +452,7 @@ ul.nav li.active a:before {
 }
 
 .button-container .btn-primary {
-    background-color:#661aff;
+    background-color:#3b1346;
     color: #fff;
     border: none;
 }
@@ -391,7 +463,7 @@ ul.nav li.active a:before {
 }
 
 .button-container .btn-secondary {
-    background-color: #661aff;
+    background-color: #3b1346;
     color: #fff;
     border: none;
 }
@@ -401,7 +473,10 @@ ul.nav li.active a:before {
     color:#b7cddf;
 }
 
-
+input, textarea { 
+	padding: 10px; 
+	border-radius: 5px; 
+}
 /* Rotating Text */
 .rotating-text {
     position: relative;
@@ -497,6 +572,7 @@ ul.nav li.active a:before {
 #home-carousel:hover .home-carousel-right {
 	right:0;
 }
+
 /* Carousel animation */
 
 	#home-carousel .item h1, #home-carousel .item h2, #home-carousel .item p {
@@ -540,6 +616,7 @@ ul.nav li.active a:before {
 /*About-stylesheets-include-here*/
 #about {
 	padding:2.5% 0%;
+	padding-top: 5%;
 	font-weight: 349;
 }
 #about .heading {
@@ -555,21 +632,31 @@ ul.nav li.active a:before {
 	padding:20px 0px;
 	font-size:18px;
 	font-weight:bolder;
-	color:#800386;
+	color:#6d2372;
 }
 .ab-sec {
 	text-align:justify;
 }
 .ab-sec h3 {
 	font-family: "Poppins";
-	font-weight:bolder;
-	color: #4d0b53;
+	font-weight:bold;
+	color: #833d83;
 }
 .ab-sec p {
 	font-family: "Poppins";
 	padding:10px 0px;
-	font-size:17px;
-	color: #812550;
+	font-size:17.5px;
+	color: #573457;
+	font-weight: 600;
+	letter-spacing: 0.014em;
+}
+#about .heading p {
+	font-family: "Poppins";
+	padding:20px 0px;
+	font-size:18px;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	color:#194572;
 }
 /*Background-stylesheets-include-here*/
 .bg-sec {
@@ -588,8 +675,22 @@ ul.nav li.active a:before {
 
 /* Skills Section */
 #skills {
+	background: url('../images/skills/background.jpg') no-repeat center center; 
+	background-size: cover; /* Ensure the image covers the entire section */
+	padding: 60px 0; /* Adjust padding as needed */
 	padding: 30px 0;
 	text-align: center;
+	padding-top: 5%;
+  }
+
+  #skills::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3); 
   }
   
   #skills .heading h2 {
@@ -609,13 +710,13 @@ ul.nav li.active a:before {
   
   #skills .row {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	gap: 15px;
 	row-gap: 50px;
 	flex-wrap: wrap;
 	text-align: center;
-	padding-left: 80px;
-	padding-right: 80px;
+	padding-left: 0;
+	padding-right: 0;
   }
   
   #skills .skill-item {
@@ -638,6 +739,14 @@ ul.nav li.active a:before {
 #contact {
 	text-align:center;
 	font-family: "Poppoins";
+	background-image: url('../images/contact/background.png');
+	background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+	padding-top: 20%;
+	padding: 90px 0; 
+	min-height: 100vh; 
+	background-attachment: scroll; 
 }
 #contact .heading {
 	margin: 0;
@@ -713,8 +822,12 @@ ul.nav li.active a:before {
 
 /* Projects Section */
 #project {
+	background: url('../images/Project/background.png') no-repeat center center; 
+	background-size: cover; /* Ensure the image covers the entire section */
+	padding: 60px 0; /* Adjust padding as needed */
 	padding: 1px 0;
 	background-color: #f9f9f9;
+	padding-top: 5%;
   }
   
   #project .heading {
@@ -741,9 +854,9 @@ ul.nav li.active a:before {
   
   /* Project Items */
   .project-item {
-	max-width: 240px;
+	max-width: 100%;
 	max-height: 500px;
-	margin: 0 auto 20px;
+	margin: 15px auto;
 	padding: 10px;
 	background-color: #f9f9f9;
 	border-radius: 10px;
@@ -839,6 +952,7 @@ textarea.form-control {
 	padding: 0; /* Remove padding to eliminate the top gap */
 	margin: 0; /* Remove margin if there's any */
   }
+  
   #footer h2 {
 	font-size: 15px;
 	margin-top: 10px;
@@ -1005,6 +1119,10 @@ line-height:30px;
     height: 100%;
     width: 100%;
 }
+.hero-text h1 { 
+	font-size: 24px; 
+	font-weight: bold; 
+}
 .hero-text {
     display: table-cell;
     vertical-align: middle;
@@ -1111,14 +1229,160 @@ font-weight:bolder;
 color:#fff;
 }
 
-/*Basic-Stylesheets-End-Here*/
-#contact {
-	background-image: url('../images/contact/background.jpg');
-	background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat; 
-	padding: 50px 0; 
-	min-height: 100vh; 
-	background-attachment: fixed; 
+
+ /* --------------------------------------------- */
+/* Mobile & Tablet Responsive Styles */
+/* --------------------------------------------- */
+
+/* Tablet: 600px - 768px (Portrait) */
+@media (max-width: 768px) {
+	/* General Adjustments */
+	h1 { font-size: 36px; }
+	h2 { font-size: 28px; }
+	.carousel-caption h2 { font-size: 24px; }
+	.carousel-caption p { font-size: 16px; }
+  
+	/* Navigation */
+	.navbar-brand { font-size: 20px; }
+	.navbar-toggle { margin: 8px; }
+  
+	/* Slider */
+	#home-carousel .item { 
+	  height: 500px; 
+	  background-position: center;
+	}
+	.carousel-caption { 
+	  top: 40%; 
+	  margin-top: -120px; 
+	}
+  
+	/* About Section */
+	.ab-sec { 
+	  flex-direction: column; 
+	  text-align: center; 
+	}
+	.col-md-6 { 
+	  width: 100%; 
+	  margin-bottom: 20px; 
+	}
+  
+	/* Skills Section */
+	#skills .skill-item { 
+	  flex: 0 0 33.33%; /* 3 items per row */
+	  padding: 10px; 
+	}
+  
+	/* Projects Section */
+	.project-item { 
+	  margin-bottom: 30px; 
+	}
+	.project-item img { 
+	  max-width: 150px; 
+	}
+  
+	/* Contact Section */
+	.contact-sec-1 { 
+	  text-align: center; 
+	  margin-bottom: 30px; 
+	}
   }
   
+  /* Mobile */
+  @media (max-width: 767px) {
+	/* General Adjustments */
+	h1 { font-size: 28px; }
+	h2 { font-size: 22px; }
+	p { font-size: 14px; }
+  
+	/* Navigation */
+	#menu .navbar-brand {
+		font-size: 15px;
+	}
+	#menu ul.nav li a {
+		font-size: 10px;
+	}
+	.navbar ul {
+		border-color: none;
+	}
+	.navbar-nav { 
+	  margin: 0; 
+	  text-align: center; 
+	}
+	.navbar-nav li { 
+	  display: block; 
+	  width: 100%; 
+	}
+	.navbar-nav li a {
+        font-size: 14px;  /* Smaller font size */
+        padding: 0 /* Reduce padding */
+    }
+	.navbar-collapse {
+        padding: 0; /* Remove unnecessary padding */
+    }
+	.container{
+		padding-left: 0px;
+	}
+	.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+		margin-left:  10px;
+		margin-right: 10px;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border: none;
+	}
+	/* Slider */
+	#home-carousel .item { 
+	  height: 400px; 
+	}
+	.carousel-caption { 
+	  top: 35%; 
+	  padding: 10px; 
+	}
+	.carousel-caption h1 { 
+	  font-size: 20px; 
+	  margin-bottom: 5px; 
+	}
+	.carousel-caption h2 { 
+	  font-size: 18px; 
+	}
+	.rotating-text { 
+	  font-size: 16px; 
+	}
+  
+	/* About Section */
+	.button-container .btn { 
+	  width: 100%; 
+	  margin: 5px 0; 
+	}
+  
+	/* Skills Section */
+	#skills .skill-item { 
+	  flex: 0 0 50%; /* 2 items per row */
+	  padding: 5px; 
+	}
+	#skills .skill-logo { 
+	  width: 50px; 
+	}
+  
+	/* Projects Section */
+	.project-item { 
+	  padding: 15px; 
+	}
+	.project-item img { 
+	  max-width: 100px; 
+	}
+  
+	/* Contact Form */
+	.col-sm-6 { 
+	  width: 100%; 
+	}
+	input, textarea { 
+	  width: 100% !important; 
+	}
+  
+	/* Footer Scrolling Text */
+	.scrolling-text { 
+	  font-size: 18px; 
+	}
+  }
+
+

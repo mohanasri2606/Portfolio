@@ -123,21 +123,6 @@ $(document).ready(function() {
 })
 	
 
- /* ==============================================
-  	  Nice Scroll 
-  	=============================================== */ 
-	
-	$("html").niceScroll({
-		scrollspeed: 100,
-		mousescrollstep: 38,
-		cursorwidth: 5,
-		cursorborder: 0,
-		cursorcolor: '#333',
-		autohidemode: true,
-		zindex: 999999999,
-		horizrailenabled: false,
-		cursorborderradius: 0,
-	});
 	
 
 /* ==============================================
@@ -302,4 +287,16 @@ $('#slider-parallax').stellar();
   });
  
 });
+
+$(document).ready(function() {
+  $('.navbar-toggle').on('click', function() {
+    var $container = $('#main-container');
+    if ($container.height() === 150) { // Assuming original height is 150px
+      $container.css('height', '100px'); // Set to desired reduced height
+    } else {
+      $container.css('height', '150px'); // Revert to original height
+    }
+  });
+});
+
 	
