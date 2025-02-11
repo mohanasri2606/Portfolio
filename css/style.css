@@ -33,7 +33,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 0 15px;
 }
 
 /* Responsive images */
@@ -1294,6 +1294,7 @@ color:#fff;
 	p { font-size: 14px; }
   
 	/* Navigation */
+
 	#home-carousel .item { 
 		height: 1000px; 
 		background-position: center;
