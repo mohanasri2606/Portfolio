@@ -1344,18 +1344,24 @@ color:#fff;
 		left: 2.5px !important;
     }
 	#slide1 h1{
-		font-size: 18px;
-		color: #e0c9db;
-	}	
+		font-size: 15px;
+		padding-left: 10px;
+		color: #f7cfb8;
+	}
 	#slide1 h2{
-		font-size: 36px;
+		padding-left: 22px;
+		font-size: 26px;
 		font-weight: 400;
-		color: #ece2ec;
+		color: #fffefd;
+	}
+	#slide1 h1 span{
+		padding-left: 0px;
 	}
 	#slide1 span{
-		color: #f2f5d5;
-		font-size: 28px;
-		font-weight: 500;
+		padding-left: 22px;
+		color: #f3f5e0;
+		font-size: 23px;
+		font-weight: 300;
 
 	}
 	#home-carousel .item { 
@@ -1382,12 +1388,12 @@ color:#fff;
 
     /* Adjust the caption text for smaller screens */
     .carousel-caption h1 {
-        font-size: 28px; /* Smaller font size for h1 */
+        font-size: 24px; /* Smaller font size for h1 */
         margin-bottom: 10px;
     }
 
     .carousel-caption h2 {
-        font-size: 20px; /* Smaller font size for h2 */
+        font-size: 16px; /* Smaller font size for h2 */
         margin-bottom: 10px;
     }
 
@@ -1483,9 +1489,51 @@ color:#fff;
 
 
 	/* About Section */
+
+	#about {
+		padding:70px 10px 80px 10px;
+	}
+	#about h2{
+		padding-top: 25px;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	#about .heading p {
+		margin-top: 0px;
+		font-size: 16px;
+		text-align:justify;
+		padding-bottom: 0px;
+		color: rgb(112, 31, 112);
+	}
+	#about h3{
+		font-size:18px ;
+		font-weight: 700;
+		text-align: left;
+		padding-top: 0px;
+		margin: 0px;
+		color: #501c50;
+	}
+	.about-para p{
+		font-size: 14px;
+		text-align:justify;
+		padding-bottom: 0px;
+		color: #631963;
+	}
+	.about-para p strong{
+		color: #4e215a;
+	}
 	.button-container .btn { 
 	  width: 100%; 
 	  margin: 5px 0; 
+	}
+	.button-container {
+		margin-left: 0px;
+	}
+	#about img { 
+        display: none;
+    }
+	#about-img {
+		background: none !important;
 	}
   
 	/* Skills Section */
